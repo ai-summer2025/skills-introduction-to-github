@@ -1,51 +1,139 @@
-# Introduction to GitHub
+# Chennai Dining - Restaurant Table Booking Website
 
-_Get started using GitHub in less than an hour._
+A modern, responsive website for booking tables at restaurants in Chennai, Tamil Nadu. This website features a beautiful UI with smooth animations, comprehensive form validation, and a mobile-first design.
 
-## Welcome
+## 🌟 Features
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+- **Beautiful Modern Design**: Clean, professional interface with Chennai-themed color scheme
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Featured Restaurants**: Showcase of popular Chennai restaurants with ratings and locations
+- **Smart Booking Form**: Comprehensive booking form with validation and smart features
+- **Mobile Navigation**: Hamburger menu for mobile devices
+- **Form Validation**: Client-side validation with helpful error messages
+- **Success Confirmation**: Beautiful confirmation modal with booking details
+- **Accessibility**: Keyboard navigation and screen reader friendly
+- **Performance**: Optimized images and smooth animations
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+## 🏪 Featured Restaurants
 
-In this exercise, you will:
+The website showcases 6 popular restaurants across Chennai:
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+1. **Southern Spice** - T. Nagar (South Indian Fine Dining)
+2. **Chettinad Palace** - Adyar (Traditional Chettinad Cuisine)
+3. **Coastal Kitchen** - Marina Beach (Seafood & Contemporary)
+4. **Mylapore Mess** - Mylapore (Traditional Tamil Authentic)
+5. **Namma Veedu** - Velachery (Home Style Comfort Food)
+6. **Royal Feast** - Anna Nagar (Multi-cuisine Luxury)
 
-### How to start this exercise
+## 🚀 Getting Started
 
-1. Right-click **Copy Exercise** and open the link in a new tab.
+1. **Clone or Download**: Download the website files to your local machine
+2. **Open in Browser**: Simply open `index.html` in any modern web browser
+3. **No Setup Required**: The website runs entirely in the browser with no server required
 
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
+## 📋 How to Use
 
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.chttps://github.com/ai-summer2025/skills-introduction-to-github/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
+### Booking a Table
 
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+1. **Browse Restaurants**: Scroll through the featured restaurants section
+2. **Quick Book**: Click "Book Table" on any restaurant card to auto-select it
+3. **Fill the Form**: Complete the booking form with your details:
+   - Select restaurant (auto-filled if you clicked from a card)
+   - Enter your full name
+   - Provide phone number (auto-formatted for Indian numbers)
+   - Enter email address
+   - Choose date (today or future dates only)
+   - Select time (past times disabled for today)
+   - Number of guests
+   - Occasion (optional)
+   - Special requirements (optional)
+4. **Submit**: Click "Confirm Booking" to submit your reservation
+5. **Confirmation**: View your booking confirmation with details and booking ID
 
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
+### Navigation
 
-   <a id="start-exercise" href="https://github.com/ai-summer2025/skills-introduction-to-github/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
+- **Home**: Hero section with main call-to-action
+- **Restaurants**: Browse all featured restaurants
+- **Book Table**: Direct access to booking form
+- **Contact**: Contact information and office details
 
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+## 🛠️ Technical Details
+
+### Technologies Used
+
+- **HTML5**: Semantic markup with accessibility features
+- **CSS3**: Modern styling with CSS Grid, Flexbox, and animations
+- **JavaScript (ES6+)**: Interactive functionality and form validation
+- **Font Awesome**: Icons for enhanced visual appeal
+- **Google Fonts**: Poppins font family for modern typography
+
+### Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+### Key Features Implementation
+
+- **Responsive Design**: CSS Grid and Flexbox for layout
+- **Form Validation**: JavaScript validation with real-time feedback
+- **Phone Formatting**: Auto-format Indian phone numbers (+91)
+- **Date/Time Logic**: Disable past dates and times
+- **Smooth Scrolling**: CSS and JavaScript for navigation
+- **Loading States**: Visual feedback during form submission
+- **Accessibility**: ARIA labels, keyboard navigation, focus management
+
+## 📱 Mobile Experience
+
+The website is fully optimized for mobile devices with:
+- Hamburger navigation menu
+- Touch-friendly buttons and form elements
+- Optimized typography and spacing
+- Fast loading times
+- Swipe-friendly restaurant cards
+
+## 🎨 Design Features
+
+- **Color Scheme**: Orange gradient theme representing Chennai's vibrant culture
+- **Typography**: Poppins font for modern, readable text
+- **Images**: High-quality restaurant images from Unsplash
+- **Animations**: Smooth hover effects and scroll animations
+- **Layout**: Card-based design with clean spacing
+
+## 🔧 Customization
+
+To customize the website for your needs:
+
+1. **Add Restaurants**: Edit the restaurant cards in `index.html`
+2. **Update Styling**: Modify `styles.css` for design changes
+3. **Change Logic**: Update `script.js` for functionality changes
+4. **Add Features**: Extend the form or add new sections
+
+## 📞 Contact Information
+
+The website includes contact details:
+- **Phone**: +91 44 2345 6789, +91 98765 43210
+- **Email**: bookings@chennaidining.com, support@chennaidining.com
+- **Address**: 123 Mount Road, Chennai, Tamil Nadu 600002
+
+## 🚀 Future Enhancements
+
+Potential features for future development:
+- Backend integration for real bookings
+- Payment gateway integration
+- Restaurant owner dashboard
+- User accounts and booking history
+- Real-time availability checking
+- SMS/Email confirmations
+- Reviews and ratings system
+- Multi-language support (Tamil, English)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+**Built with ❤️ for Chennai's dining community**
