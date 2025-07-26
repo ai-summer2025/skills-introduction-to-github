@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Dining - Restaurant Table Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Chennai Dining</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#restaurants" class="nav-link">Restaurants</a></li>
+                    <li><a href="#booking" class="nav-link">Book Table</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Chennai's <span class="highlight">Finest Restaurants</span></h1>
+            <p>Book your perfect dining experience in the cultural capital of South India</p>
+            <a href="#booking" class="cta-button">Book a Table Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Restaurant Interior">
+        </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section id="restaurants" class="restaurants">
+        <div class="container">
+            <h2 class="section-title">Popular Restaurants in Chennai</h2>
+            <div class="restaurant-grid">
+                <div class="restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Southern Spice">
+                    <div class="card-content">
+                        <h3>Southern Spice</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> T. Nagar</p>
+                        <p class="cuisine">South Indian • Fine Dining</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.5 (120 reviews)</span>
+                        </div>
+                        <button class="book-btn" onclick="selectRestaurant('Southern Spice', 'T. Nagar')">Book Table</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1564758564527-54c0c8fa13c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chettinad Palace">
+                    <div class="card-content">
+                        <h3>Chettinad Palace</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Adyar</p>
+                        <p class="cuisine">Chettinad • Traditional</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>4.8 (200 reviews)</span>
+                        </div>
+                        <button class="book-btn" onclick="selectRestaurant('Chettinad Palace', 'Adyar')">Book Table</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coastal Kitchen">
+                    <div class="card-content">
+                        <h3>Coastal Kitchen</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Marina Beach</p>
+                        <p class="cuisine">Seafood • Contemporary</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>4.2 (85 reviews)</span>
+                        </div>
+                        <button class="book-btn" onclick="selectRestaurant('Coastal Kitchen', 'Marina Beach')">Book Table</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mylapore Mess">
+                    <div class="card-content">
+                        <h3>Mylapore Mess</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Mylapore</p>
+                        <p class="cuisine">Traditional Tamil • Authentic</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.6 (150 reviews)</span>
+                        </div>
+                        <button class="book-btn" onclick="selectRestaurant('Mylapore Mess', 'Mylapore')">Book Table</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Namma Veedu">
+                    <div class="card-content">
+                        <h3>Namma Veedu</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Velachery</p>
+                        <p class="cuisine">Home Style • Comfort Food</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>4.3 (95 reviews)</span>
+                        </div>
+                        <button class="book-btn" onclick="selectRestaurant('Namma Veedu', 'Velachery')">Book Table</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Royal Feast">
+                    <div class="card-content">
+                        <h3>Royal Feast</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Anna Nagar</p>
+                        <p class="cuisine">Multi-cuisine • Luxury</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.7 (180 reviews)</span>
+                        </div>
+                        <button class="book-btn" onclick="selectRestaurant('Royal Feast', 'Anna Nagar')">Book Table</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h2>Reserve Your Table</h2>
+                    <p>Experience the best of Chennai's culinary scene. Book your table now for an unforgettable dining experience.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Instant Confirmation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <span>Best Restaurants</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Top Rated Service</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form-container">
+                    <form id="bookingForm" class="booking-form">
+                        <h3>Book Your Table</h3>
+                        
+                        <div class="form-group">
+                            <label for="restaurant">Select Restaurant</label>
+                            <select id="restaurant" name="restaurant" required>
+                                <option value="">Choose a restaurant</option>
+                                <option value="Southern Spice - T. Nagar">Southern Spice - T. Nagar</option>
+                                <option value="Chettinad Palace - Adyar">Chettinad Palace - Adyar</option>
+                                <option value="Coastal Kitchen - Marina Beach">Coastal Kitchen - Marina Beach</option>
+                                <option value="Mylapore Mess - Mylapore">Mylapore Mess - Mylapore</option>
+                                <option value="Namma Veedu - Velachery">Namma Veedu - Velachery</option>
+                                <option value="Royal Feast - Anna Nagar">Royal Feast - Anna Nagar</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                    <option value="21:30">9:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                    <option value="8+">8+ Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Occasion (Optional)</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Select occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="romantic">Romantic Dinner</option>
+                                    <option value="family">Family Gathering</option>
+                                    <option value="celebration">Celebration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requirements">Special Requirements (Optional)</label>
+                            <textarea id="requirements" name="requirements" rows="3" placeholder="Any dietary restrictions, accessibility needs, or special requests..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirm Booking
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 44 2345 6789</p>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>bookings@chennaidining.com</p>
+                            <p>support@chennaidining.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Office</h3>
+                            <p>123 Mount Road</p>
+                            <p>Chennai, Tamil Nadu 600002</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>Chennai Dining</span>
+                    </div>
+                    <p>Your gateway to the best dining experiences in Chennai. Book tables at top restaurants with ease.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#booking">Book Table</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Areas</h3>
+                    <ul>
+                        <li>T. Nagar</li>
+                        <li>Adyar</li>
+                        <li>Anna Nagar</li>
+                        <li>Velachery</li>
+                        <li>Mylapore</li>
+                        <li>Marina Beach</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chennai Dining. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Booking Confirmed!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Your table has been successfully booked. You will receive a confirmation email shortly.</p>
+                <div id="bookingDetails"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
